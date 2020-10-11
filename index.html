@@ -637,11 +637,21 @@
 			loc.style.display = "none"
 		}
 		window.onload = function(){
-			var code = localStorage.getItem('wedCode');
+			var code = localStorage.getItem('wedCode');			
+			console.log(window.location.href)
+			var myParam = window.location.href.split('i=')
+			if(myParam.length>1)
+			{
+			console.log(myParam)
+			return;
+			}
+			console.log(321132)
 			if(code===undefined)
 			{
 				return;
 			}
+
+			
 		}
 	</script>
 </body>
