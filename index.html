@@ -33,20 +33,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" style="background:black">
-
-
-		
-		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
-
-		<embed 
-			src="assets/music/Advertising.mp3"
-			width="300"
-			height="90"
-			loop="false"
-			hidden="true"
-			autostart="true">
-	
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" style="background:black">	
 
 	<!-- LOADER -->
 	<div id="preloader">
@@ -75,7 +62,7 @@
 						<li><a class="nav-link" href="#about">About Us</a></li>
 						<li><a class="nav-link" href="#story">Story</a></li>
 						<li><a class="nav-link" href="#family">Family</a></li>
-						<li><a class="nav-link" href="#events">Events</a></li>						
+						<li><a class="nav-link" href="events.html?a=1">Events</a></li>					
 						<li><a class="nav-link" href="#testimonials">Messages</a></li>
 						<li><a class="nav-link" href="#gallery">Gallery</a></li>
 						<li><a class="nav-link" href="#wedding">Wedding</a></li>
@@ -375,62 +362,6 @@
 	</div>
 	<!-- End Family -->
 
-	<!-- Start Events -->
-	<div id="events" class="events-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Main Events</h2>
-						<p> </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="event-inner">
-						<div class="event-img" id="m1">
-							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/event-img-01.jpg"
-								alt="" />
-						</div>
-						<h2>Engagement Ceremony</h2>
-						<h3>24th July 2020 at 7:00 pm</h3>
-						<p>Royal Swan Banquet, near Marble market, Sector 33, Gurugram, Haryana 122001</p>
-						<a onclick="showLoc(1)" href="#geoLocation" class="commonBtn">See location <i
-								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="event-inner">
-						<div class="event-img" id="m2">
-							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/mehendi.jpg"
-								alt="" />
-						</div>
-						<h2>Sangeet & Mehendi</h2>
-						<h3>12th December 2020 at 8:00 pm</h3>
-						<p>ITC Maurya, Sardar Patel Marg, Diplomatic Enclave, Chanakyapuri, New Delhi 110021</p>
-						<a onclick="showLoc(2)" href="#geoLocation" class="commonBtn">See location <i
-								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="event-inner">
-						<div class="event-img">
-							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/wedding.jpg"
-								alt="" />
-						</div>
-						<h2>Wedding Ceremony</h2>
-						<h3>13th December 2020 at 8:30 pm</h3>
-						<p>Radisson Blu, G-59, Connaught Place, Block G, Connaught Place, New Delhi 110001</p>
-						<a class="commonBtn" onclick="showLoc(3)" href="#geoLocation">See location <i
-								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Events -->
-
 	<div id="geoLocation" data-aos="fade-up">
 		<div>
 			<a class="commonBtn" style="margin-top: 10px;" onclick="hideLoc()" href="#events">Hide Location</a>
@@ -619,109 +550,15 @@
 		</div>
 	</div>
 
-	<div id="wedding" class="wedding-box">
+
+	<div id="eventCD"  class="contact-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Bride's Wedding Day Events</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-bachelorette-party"></i></div>
-						<h3 class="title">Haldi</h3>
-						<h4>13 December 2020 at 10:30 AM</h4>
-						<p class="description">
-							Get ready to get your hands yellow and bring forth the wedding glow on the face of the bride.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-wedding"></i></div>
-						<h3 class="title">Wedding Ceremony </h3>
-						<h4>13 December 2020 at 8 PM</h4>
-						<p class="description">
-							We all request the honor of your presence to celebrate our wedding with your blessings and love.</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-reception-bell"></i></div>
-						<h3 class="title">Wedding Dinner </h3>
-						<h4>13 December 2020 at 9 PM</h4>
-						<p class="description">
-							Wedding dinner will commence once the wedding ceremony is completed.
-						</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div id="weddinggr" class="wedding-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Groom's Wedding Day Events</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-wedding"></i></div>
-						<h3 class="title">Sehra Bandi</h3>
-						<h4>13 December 2020 at 5 PM</h4>
-						<p class="description">
-							Come and witness the love and blessings of the groom's sisters as they tie the Sehra to their brother.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-bachelorette-party"></i></div>
-						<h3 class="title">Baraat </h3>
-						<h4>13 December 2020 at 7:30 PM</h4>
-						<p class="description">
-							Baraat will departure at 6 PM<br> and will arrive at the wedding venue at 7.30 PM
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<div class="serviceBox">
-						<div class="service-icon"><i class="flaticon-reception-bell"></i></div>
-						<h3 class="title">Wedding Dinner</h3>
-						<h4>13 December 2020 at 9 PM</h4>
-						<p class="description">
-							Wedding dinner will commence once the wedding ceremony is completed.
-						</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div id="contact" class="contact-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>RSVP</h2>
+						<h2>Wedding Events</h2>
 						<p style="font-size: 30px; font-weight: bold;">
-							With the blessings of our families,<br> we all request the honor of your presence to celebrate<br> our wedding
+							To know about the events<br>Enter the code that you were provided and click 'Show Events'
 						</p>
 					</div>
 				</div>
@@ -729,55 +566,25 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
-						<form id="contactForm">
+					
 							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<h4>Name:</h4>
-										<input type="text" class="form-control" id="name" name="name"
-											placeholder="Your Name" required data-error="Please enter your name">
+								<div class="col-sm-12 text-left">
+									<h4>Enter Code</h4>
+								</div>	
+								<div class="col-sm-12">
+									<div class="form-group">										
+										<input type="text" class="form-control" 
+											placeholder="Enter Code">
 										<div class="help-block with-errors"></div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<h4>Email:</h4>
-										<input type="email" placeholder="Your Email" id="email" class="form-control"
-											name="email" required data-error="Please enter your email">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<h4>Phone number:</h4>
-										<input type="text" placeholder="Your Phone Number" id="phone"
-											class="form-control" name="phone" required
-											data-error="Please enter your phone number">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<h4>Number Of Guests Attending The Function:</h4>
-										<input type="text" placeholder="Number Of Guests" id="guest"
-											class="form-control"></input>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<h4>Message:</h4>
-										<textarea class="form-control" id="message" placeholder="Your Message"
-											rows="8"></textarea>
-									</div>
-									<div class="submit-button text-center">
-										<button class="commonBtn" style="opacity: 1;" id="submit">Send
-											Message</button>
-										<div id="msgSubmit" class="h3 text-center hidden"></div>
-										<div class="clearfix"></div>
+								</div>	
+								<div class=" col-sm-12">								
+									<div class="submit-button text-center">										
+											<a class="commonBtn"  onclick="hideLoc()" href="#events">Show Events</a>
 									</div>
 								</div>
 							</div>
-						</form>
+					
 					</div>
 				</div>
 			</div>
@@ -830,7 +637,11 @@
 			loc.style.display = "none"
 		}
 		window.onload = function(){
-			
+			var code = localStorage.getItem('wedCode');
+			if(code===undefined)
+			{
+				return;
+			}
 		}
 	</script>
 </body>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Site Metas -->
+	<title>Have your own custom wedding website | Share Photos, Videos and other wedding details all in one place</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="Capture the memories in a Customized Wedding Website. Have a website where you can send wedding invitations and share all your wedding details, photos, videos, and stories in a unique and a stylish way.">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link href="assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" style="background:black">	
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="preloader pulse">
+			<h3>Sneha & Varun</h3>
+		</div>
+	</div><!-- end loader -->
+	<!-- END LOADER -->
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+	<!-- Start header -->
+	<header class="top-header" style="background:black">
+		<nav class="navbar header-nav navbar-expand-lg">
+			<div class="container">
+				<div class="navbar-brand" href="index.html" ><a>The Magical Momentz</a></div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="index.html">Home</a></li>					
+						<li><a class="nav-link" href="#events">Events</a></li>
+						<li><a class="nav-link" href="#wedding">Wedding</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start Events -->
+	<div id="events" class="events-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Main Events</h2>
+						<p> </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="event-inner">
+						<div class="event-img" id="m1">
+							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/event-img-01.jpg"
+								alt="" />
+						</div>
+						<h2>Engagement Ceremony</h2>
+						<h3>24th July 2020 at 7:00 pm</h3>
+						<p>Royal Swan Banquet, near Marble market, Sector 33, Gurugram, Haryana 122001</p>
+						<a onclick="showLoc(1)" href="#geoLocation" class="commonBtn">See location <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="event-inner">
+						<div class="event-img" id="m2">
+							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/mehendi.jpg"
+								alt="" />
+						</div>
+						<h2>Sangeet & Mehendi</h2>
+						<h3>12th December 2020 at 8:00 pm</h3>
+						<p>ITC Maurya, Sardar Patel Marg, Diplomatic Enclave, Chanakyapuri, New Delhi 110021</p>
+						<a onclick="showLoc(2)" href="#geoLocation" class="commonBtn">See location <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="event-inner">
+						<div class="event-img">
+							<img class="img-fluid" style="height: 280px; width: 100%;" src="images/wedding.jpg"
+								alt="" />
+						</div>
+						<h2>Wedding Ceremony</h2>
+						<h3>13th December 2020 at 8:30 pm</h3>
+						<p>Radisson Blu, G-59, Connaught Place, Block G, Connaught Place, New Delhi 110001</p>
+						<a class="commonBtn" onclick="showLoc(3)" href="#geoLocation">See location <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Events -->
+
+	
+	<div id="geoLocation" data-aos="fade-up">
+		<div>
+			<a class="commonBtn" style="margin-top: 10px;" onclick="hideLoc()" href="#events">Hide Location</a>
+		</div>
+		<iframe id="frame" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+			aria-hidden="false" tabindex="0"></iframe>
+	</div>
+
+	<div id="wedding" class="wedding-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Bride's Wedding Day Events</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-bachelorette-party"></i></div>
+						<h3 class="title">Haldi</h3>
+						<h4>13 December 2020 at 10:30 AM</h4>
+						<p class="description">
+							Get ready to get your hands yellow and bring forth the wedding glow on the face of the bride.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title">Wedding Ceremony </h3>
+						<h4>13 December 2020 at 8 PM</h4>
+						<p class="description">
+							We all request the honor of your presence to celebrate our wedding with your blessings and love.</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-reception-bell"></i></div>
+						<h3 class="title">Wedding Dinner </h3>
+						<h4>13 December 2020 at 9 PM</h4>
+						<p class="description">
+							Wedding dinner will commence once the wedding ceremony is completed.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="weddinggr" class="wedding-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Groom's Wedding Day Events</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title">Sehra Bandi</h3>
+						<h4>13 December 2020 at 5 PM</h4>
+						<p class="description">
+							Come and witness the love and blessings of the groom's sisters as they tie the Sehra to their brother.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-bachelorette-party"></i></div>
+						<h3 class="title">Baraat </h3>
+						<h4>13 December 2020 at 7:30 PM</h4>
+						<p class="description">
+							Baraat will departure at 6 PM<br> and will arrive at the wedding venue at 7.30 PM
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-reception-bell"></i></div>
+						<h3 class="title">Wedding Dinner</h3>
+						<h4>13 December 2020 at 9 PM</h4>
+						<p class="description">
+							Wedding dinner will commence once the wedding ceremony is completed.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="contact" class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>RSVP</h2>
+						<p style="font-size: 30px; font-weight: bold;">
+							With the blessings of our families,<br> we all request the honor of your presence to celebrate<br> our wedding
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<h4>Name:</h4>
+										<input type="text" class="form-control" id="name" name="name"
+											placeholder="Your Name" required data-error="Please enter your name">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<h4>Email:</h4>
+										<input type="email" placeholder="Your Email" id="email" class="form-control"
+											name="email" required data-error="Please enter your email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<h4>Phone number:</h4>
+										<input type="text" placeholder="Your Phone Number" id="phone"
+											class="form-control" name="phone" required
+											data-error="Please enter your phone number">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<h4>Number Of Guests Attending The Function:</h4>
+										<input type="text" placeholder="Number Of Guests" id="guest"
+											class="form-control"></input>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<h4>Message:</h4>
+										<textarea class="form-control" id="message" placeholder="Your Message"
+											rows="8"></textarea>
+									</div>
+									<div class="submit-button text-center">
+										<button class="commonBtn" style="opacity: 1;" id="submit">Send
+											Message</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">The Magical Momentz</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- ALL JS FILES -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.pogo-slider.min.js"></script>
+	<script src="js/slider-index.js"></script>
+	<script src="assets/owl.carousel/owl.carousel.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/timeLine.min.js"></script>	
+	<script src="js/custom.js"></script>
+	<script>
+		function showLoc(num) {
+			var loc = document.getElementById("geoLocation");
+			var frame = document.getElementById("frame");
+			loc.style.display = "block"
+			if (num === 3) {
+				frame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.861877234283!2d77.21505221542921!3d28.633901490769084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37afdab457%3A0x4c822ae4cb340786!2sRadisson%20Blu%20Marina%20Hotel%20Connaught%20Place!5e0!3m2!1sen!2sin!4v1601116516268!5m2!1sen!2sin"
+			}
+			else if (num === 2) {
+				frame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16665.4570317413!2d77.16805328492443!3d28.585350562564848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f53da4f1ff4c214!2sITC%20Maurya%2C%20A%20Luxury%20Collection%20Hotel%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1601118217821!5m2!1sen!2sin"
+			}
+			else if (num === 1) {
+				frame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.67834246434!2d77.0187189154262!3d28.428961100015282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d198435ca7173%3A0x69b8c9ecf0277ba!2sRoyal%20swan%20banquet!5e0!3m2!1sen!2sin!4v1601118022326!5m2!1sen!2sin"
+			}
+		}
+		function hideLoc() {
+			var loc = document.getElementById("geoLocation");
+			loc.style.display = "none"
+		}
+		window.onload = function(){
+			
+		}
+	</script>
+</body>
+
+</html>
